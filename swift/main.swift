@@ -34,17 +34,17 @@ var b = Double(readLine()!)!
 print("a =", a, ", b =", b)
 
 switch outputFormat {
-  case 0:
-    addition(a: a, b: b)
-  case 1:
-    subtraction(a: a, b: b)
-  case 2:
-    multiplication(a: a, b: b)
-  case 3:
-    division(a: a, b: b)
-  default:
-    addition(a: a, b: b)
-    subtraction(a: a, b: b)
-    multiplication(a: a, b: b)
-    division(a: a, b: b)
+    case 0:
+        addition(a: a, b: b)
+    case 1:
+        subtraction(a: a, b: b)
+    case 2:
+        multiplication(a: a, b: b)
+    case 3:
+        division(a: a, b: b)
+    default:
+        addition(a: a, b: b)
+        subtraction(a: a, b: b)
+        multiplication(a: a, b: b)
+        division(a: a, b: b)
 }
