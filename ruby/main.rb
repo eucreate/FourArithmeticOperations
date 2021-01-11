@@ -11,13 +11,14 @@ def multiplication(a, b)
 end
 
 def division(a, b)
-  print "a / b = #{a / b}\n"
+  if b == 0 then
+    print "Oops, you cannot divide by 0!\n"
+  else
+    print "a / b = #{a / b}\n"
+  end
 end
 
-print "Four arithmetic operations on a and b\nEnter values\na = "
-a = gets.to_f
-print "b = "
-b = gets.to_f
+print "Four arithmetic operations on a and b\nEnter values\n"
 puts "Which calculations do you want to output?\n"
 puts "0. addition\n"
 puts "1. subtraction\n"
@@ -26,7 +27,10 @@ puts "3. division\n"
 puts "Except 0 to 3. All\n"
 print "Enter a number: "
 outputFormat = gets.to_i
-print "a = #{a}, b = #{b}\n"
+print "a = "
+a = gets.to_f
+print "b = "
+b = gets.to_f
 
 case outputFormat
 when 0 then

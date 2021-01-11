@@ -15,7 +15,11 @@ func multiplication(a float32, b float32) {
 }
 
 func division(a float32, b float32) {
-	fmt.Printf("a / b = %v\n", a/b)
+	if b == 0 {
+		fmt.Println("Oops, you cannot divide by 0!")
+	} else {
+		fmt.Printf("a / b = %v\n", a/b)
+	}
 }
 
 func main() {
@@ -24,10 +28,7 @@ func main() {
 		b	float32
 		outputFormat	int
 	)
-	fmt.Print("Four arithmetic operations on a and b\nEnter values\na = ")
-	fmt.Scan(&a)
-	fmt.Print("b = ")
-	fmt.Scan(&b)
+	fmt.Println("Four arithmetic operations on a and b\nEnter values")
 	fmt.Println("Which calculations do you want to output?")
 	fmt.Println("0. addition")
 	fmt.Println("1. subtraction")
@@ -36,7 +37,10 @@ func main() {
 	fmt.Println("Except 0 to 3. All")
 	fmt.Printf("Enter a number: ")
 	fmt.Scan(&outputFormat)
-	fmt.Printf("a = %v, b = %v\n", a, b)
+	fmt.Print("a = ")
+	fmt.Scan(&a)
+	fmt.Print("b = ")
+	fmt.Scan(&b)
 
 	switch outputFormat {
 		case 0:
