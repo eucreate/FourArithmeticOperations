@@ -55,7 +55,6 @@ int main(void) {
       subtraction(a, b);
       multiplication(a, b);
       division(a, b);
-      break;
   }
 
   return 0;

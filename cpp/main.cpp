@@ -40,12 +40,16 @@ int main() {
   switch (outputFormat) {
     case 0:
       addition(a, b);
+			break;
     case 1:
       subtraction(a, b);
+			break;
     case 2:
       multiplecation(a, b);
+			break;
     case 3:
       division(a, b);
+			break;
     default:
       addition(a, b);
       subtraction(a, b);
